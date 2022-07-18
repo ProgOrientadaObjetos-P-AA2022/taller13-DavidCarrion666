@@ -26,22 +26,20 @@ public class Principal {
         Para utpl.edu.ec
         Para gobiernoec.gob
         
-        */
-        
+        */       
         Estudiante e = new Estudiante();
         e.establecerNombres("René Elizalde");
         e.establecerUserName("rrelizalde");
+        
+        
         ArrayList<Correo> lista = new ArrayList<>();
         
         DominioGmail dominio = new DominioGmail();
-        dominio.establecerDominio("gmail.com");
-        Correo c = new Correo();
-        c.establecerDominio(dominio);
-        c.establecerUserName(e.obtenerUserName());
-        c.establecerCorreo();
-        
-        lista.add(c);
-        
+        dominio.establecerDominio(e.obtenerUserName());
+        System.out.println(dominio);
+
+
+   
         e.establecerCorreos(lista);
         
         System.out.printf("%s\n", e);

@@ -9,11 +9,11 @@ package p3;
  *
  * @author reroes
  */
-public class DominioGmail {
+public class DominioGmail implements Dominio {
     private String dominio;
     
     public void establecerDominio(String g){
-        dominio = g;
+        dominio = g + "@gmail.com";
     }
     
     public String obtenerDominio(){
