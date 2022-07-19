@@ -10,7 +10,7 @@ package p3;
  */
 public interface Dominio {
 
-    public void establecerDominio(String ak);
+    public void establecerDominio();
 
     public String obtenerDominio();
 }

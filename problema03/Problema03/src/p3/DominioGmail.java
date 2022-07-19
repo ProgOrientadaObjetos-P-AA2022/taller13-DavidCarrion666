@@ -12,8 +12,8 @@ package p3;
 public class DominioGmail implements Dominio {
     private String dominio;
     
-    public void establecerDominio(String g){
-        dominio = g + "@gmail.com";
+    public void establecerDominio(){
+        dominio = "@gmail.com";
     }
     
     public String obtenerDominio(){
